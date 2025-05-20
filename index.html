@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed My Sheep</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex, nofollow">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Chewy&family=Diplomata&family=Domine:wght@400..700&family=Gravitas+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="images/logo.png" alt="Feed My Sheep Logo" width="50px" height="29" aria-hidden="true" decoding="async">
+            <h3>FEED MY SHEEP</h3>
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Activities</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <a href="tel:+84 1985 33 999" class="cs-phone">
+                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="phono-icon" width="24" height="24" aria-hidden="true" decoding="async">
+                <span class="cs-phone-text">+61 4 1456 1955</span>
+            </a>
+            <div class="cs-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="facebook-icon" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="twitter-logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="instagram-logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="youtube-logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+<section id="hero-1785">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">UNFORGETTABLE FAMILY ESCAPE</span>
+            <h1 class="cs-title"> Experience the Joy of Farm Life</h1>
+            <p class="cs-text">
+                Feed, cuddle, and connect with our friendly animals. 
+                A perfect countryside adventure for families, kids, and animal lovers—just a short drive away.
+            </p>
+            <div class="cs-button-container">
+                <div class="cs-button-group">
+                    <a href="" class="cs-button-solid">PLAN YOUR VISIT</a>
+                </div>
+                  <div class="cs-button-group">
+                    <a href="" class="cs-button-solid">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slides-container">   
+        <div id="slides-wraper">
+            <div class="slide-hero active">
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="images/BG.jpg" alt="Feed My Farm Background" width="1920" height="1200" aria-hidden="true">
+                </picture>
+               
+            </div>
+            <div class="slide-hero">
+                 <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="images/BG3.jpg" alt="Feed My Farm Background" width="1920" height="1200" aria-hidden="true">
+                </picture>
+            </div>
+            <div class="slide-hero">
+                <picture class="cs-background">
+                    <img loading="lazy" decoding="async" src="images/BG2.jpg" alt="Feed My Farm Background" width="1920" height="1200" aria-hidden="true">
+                </picture>
+            </div>
+        </div> 
+    </div>
+
+    <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic-background" height="161" width="1920" loading="lazy" decoding="async">
+    <div class="slider-icons-container">
+        <span class="slider-icon active"></span>
+        <span class="slider-icon"></span>
+        <span class="slider-icon"></span>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-289">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Service</span>
+                <h2 class="cs-title">Why You Should Choose Us As The Family Holiday Option</h2>
+            </div>
+            <p class="cs-text">
+                At Feed My Sheep, we create joyful, hands-on farm adventures for families and animal lovers alike. Whether you're here to cuddle our friendly sheep, enjoy the fresh country air, or simply spend quality time together, our farm offers the perfect escape from busy city life. Come make memories that matter — just a short drive away.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/award.svg" alt="award-icon" width="40" height="48">
+                <h3 class="cs-h3">Authentic Farm Life Experience Close to Home</h3>
+                <p class="cs-item-text">
+                    No long drive or hectic travel needed — just a short trip to immerse yourself in real countryside charm. You'll connect with friendly animals and unplug from the city in a peaceful, natural environment.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild-black.svg" alt="verified-icon" width="40" height="48">
+                <h3 class="cs-h3">Wholesome Outdoor Fun for All Ages</h3>
+                <p class="cs-item-text">
+                    From toddlers to grandparents, everyone can enjoy something — whether it's cuddling baby animals, painting bright faces, or walking through our scenic paddocks. Our activities are designed to bring the whole family together in a safe, joyful setting.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/family-icons.png" alt="icon" width="48" height="48">
+                <h3 class="cs-h3">Memorable Moments Made Simple</h3>
+                <p class="cs-item-text">
+                    We make it easy to plan a stress-free outing. With hands-on crafts, interactive feeding zones, and fresh open air, your family can laugh, learn, and create memories that last — without the crowds or complications of big theme parks.
+                </p>
+            </li>
+        </ul>
+
+    </div>
+</section>
+                   
+
+<h1 id="carousel-heading" >ACTIVITIES</h1>
+<section class="splide" aria-label="Slide Container Example">
+  <div class="splide__track">
+    <ul class="splide__list">
+
+      <li class="splide__slide">
+        <a href="#" class="splide__slide__container">
+          <div  class="slide-inner">
+            <img src="images/Activity1-FacePainting.jpg" alt="Face Painting Picture">
+            <h2 id="slide-heading">Face Painting</h2>
+            <span>Transform into your favorite character with our vibrant and creative face painting! Perfect for kids who love a splash of color and a whole lot of fun.</span>
+            <button class="cs-button-solid1">View More</button>
+          </div>
+        </a>  
+      </li>
+
+      <li class="splide__slide">
+        <a href="#" class="splide__slide__container">
+          <div class="slide-inner">
+                <img src="images/Activity2-Feed and Pet Our Animal.jpg" alt="Feed and Pet Our Animal Picture">
+                <h2 id="slide-heading">Feed and Pet Our Animal</h2>
+                <span>Get up close and personal with our adorable farm animals! Gently feed and cuddle with our friendly crew in a heartwarming, hands-on experience.</span>
+                <button class="cs-button-solid1">View More</button>
+          </div>
+        </a>
+      </li>
+
+        <li class="splide__slide">
+            <a href="#" class="splide__slide__container">
+                <div class="slide-inner">
+                    <img src="images/Activity3-CraftActivities.jpg" alt="Craft Activities Picture">
+                    <h2 id="slide-heading">Craft Activities</h2>
+                    <span>Unleash your creativity with our fun, hands-on craft stations! Great for kids and adults who love to make, create, and take home something special.</span>
+                    <button class="cs-button-solid1">View More</button>
+                </div>
+            </a>
+        </li>
+      
+
+        <li class="splide__slide">
+            <a href="#" class="splide__slide__container">
+                <div class="slide-inner">
+                    <img src="images/Activity4-BackPaddockWalk.jpg" alt="Back Paddock Walk Picture">
+                    <h2 id="slide-heading">Back Paddock Walk</h2>
+                    <span>Wander through peaceful paddocks on a scenic walk surrounded by nature and gentle animals. A relaxing adventure for the whole family to enjoy.</span>
+                    <button class="cs-button-solid1">View More</button>
+                </div>
+            </a>  
+        </li>
+    </ul>
+  </div>
+
+<div class="splide__arrows splide__arrows--ltr">
+  <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide" aria-controls="splide01-track">
+    <img src="images/Previous-icon.png" alt=" Previous icon">
+  </button>
+  <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="splide01-track">
+   <img src="images/Next-icon.png" alt=" Next Icon">
+  </button>
+</div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+<footer id="footer-1147">
+    <div class="cs-container">
+        <div class="cs-top">
+            <a aria-label="go back to home" class="cs-logo1" href="">
+                <img src="images/logo.png" alt="Feed My Sheep Logo" width="100px" height="100px" aria-hidden="true" decoding="async">
+                <h3>FEED MY SHEEP</h3>
+            </a>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a href="" class="cs-link">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">About</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Services</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Activities</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Events</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Blog</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom">
+            <!--Social-->
+            <ul class="cs-social">
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-white.svg" alt="facebook-icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-white.svg" alt="twitter-icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-transparent.svg" alt="instagram-icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-transparent2.svg" alt="youtube-icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+            </ul>
+            <span class="cs-copyright">
+                © Copyright 2025 - <a href="" class="cs-copyright-link">Feed My Sheep</a>
+            </span>
+        </div>
+    </div>
+    <!--Background-->
+    <picture class="cs-background">
+        <img loading="lazy" decoding="async" src="images/Footer-BG.jpg" alt="Sheep Footer Background">
+    </picture>
+</footer>
+                 
+                        
+<script src="script.js"></script>
+                                
+</body>
+</html>
